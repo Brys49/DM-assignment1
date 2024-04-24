@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 
 today = datetime.datetime.today()
-date_str = today.strftime("%Y-%m-%d")
+date_str = today.strftime("%Y-%m-%d_%H-%M-%S")
 
 train = pd.read_csv('data/train.csv')
 test = pd.read_csv('data/test.csv')
